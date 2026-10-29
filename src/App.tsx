@@ -34,7 +34,7 @@ import { Units } from '@/pages/admin/Units'
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ToastProvider>
         <StoreConfigProvider>
           <ProductsProvider>
