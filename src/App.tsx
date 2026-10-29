@@ -32,9 +32,11 @@ import { ProductsList } from '@/pages/admin/ProductsList'
 import { Settings } from '@/pages/admin/Settings'
 import { Units } from '@/pages/admin/Units'
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={basename}>
       <ToastProvider>
         <StoreConfigProvider>
           <ProductsProvider>
