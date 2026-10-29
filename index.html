@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NovaVitrine — sua loja de confiança, online e na loja física." />
+    <title>NovaVitrine | Sua loja, online e na vida real</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript">
+      // Decodifica a URL reescrita pelo 404.html (suporte a rotas do React Router em GitHub Pages).
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
